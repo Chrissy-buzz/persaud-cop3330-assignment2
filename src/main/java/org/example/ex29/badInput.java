@@ -12,7 +12,7 @@ public class badInput {
 
     public static void main(String[] args) {
         int rate;
-        
+
         while (true) {
             try {
                 Scanner scan1 = new Scanner(System.in);

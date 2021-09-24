@@ -15,7 +15,7 @@ public class multiTable {
         while (i <= 12)
             while (j <= 12) {
                 {
-                    System.out.printf("%d \t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n", num * i, num2 * j, 3*j, 4*j, 5*j, 6*j, 7*j, 8*j, 9*j, 10*j, 11*j, 12*j);
+                    System.out.printf((String.format("%d %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d\n", num * i, num2 * j, 3*j, 4*j, 5*j, 6*j, 7*j, 8*j, 9*j, 10*j, 11*j, 12*j)));
                     i++;
                     j++;
                 }

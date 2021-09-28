@@ -16,6 +16,7 @@ public class validateInput {
     String zip;
     String id;
 
+//constructor
     public validateInput(String first, String last, String zip, String id) {
         this.first = first;
         this.last = last;
@@ -23,6 +24,7 @@ public class validateInput {
         this.id = id;
     }
 
+    //check if meets first name parameters
     public String fullName(String first, String last) {
         if (first.isEmpty() || last.isEmpty()) {
             return "The first name must be filled in.\n";
@@ -36,6 +38,7 @@ public class validateInput {
         return "";
     }
 
+    //zip code parameters
     public String zipCode(String zip) {
         if (zip.length() < 5) {
             return "The zipcode must be a 5 digit number.\n";
@@ -47,6 +50,7 @@ public class validateInput {
         }
     }
 
+    //employee ID parameters
     public String EmplID(String id) {
         if (id.matches("\\a{2}-\\d{4}")){
     return "";

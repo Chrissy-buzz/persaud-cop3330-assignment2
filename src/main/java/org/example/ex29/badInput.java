@@ -23,9 +23,9 @@ public class badInput {
                     break;
                 }
                 if (rate == 0) {
-                    System.out.println("Sorry. That's not a valid input.");
+                    System.out.println("Sorry. That's not a valid input."); //no division by zero
                 }
-            } catch (InputMismatchException exception) {
+            } catch (InputMismatchException exception) { //Input Mismatch catches non numerical values and allows continued input
                 System.out.println("Sorry. That's not a valid input.");
             }
 

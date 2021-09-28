@@ -26,6 +26,7 @@ public class passwordValidator {
         boolean hasDigit = false;
         boolean hasSpecial = false;
 
+        //password contain special character
         Set<Character> set = new HashSet<>(
                 Arrays.asList('!', '@', '#', '$', '%', '^', '&',
                         '*', '(', ')', '-', '+'));
@@ -37,7 +38,7 @@ public class passwordValidator {
             if (set.contains(i))
                 hasSpecial = true;
         }
-
+        //password contain special character, letter and digit
         if (hasDigit && hasLetter && hasSpecial
                 && (x.length() >= 8))
             return 1;
@@ -56,7 +57,7 @@ public class passwordValidator {
 
 
 class App {
-
+//functions to output password strength
         static void veryWeak(String z) {
             System.out.println("The password '" + z + "' is a very weak password.");
         }

@@ -47,6 +47,7 @@ public class isAnagram {
 
 class Demo {
     public static void main(String[] args) {
+        //Prompt user input
         System.out.print("Enter two strings and I'll tell you if they are anagrams:\n");
 
         Scanner scan1 = new Scanner(System.in);
@@ -57,9 +58,9 @@ class Demo {
         System.out.print("Enter the second string: ");
         String str2 = scan2.next();
 
-        isAnagram myObj = new isAnagram(str1, str2);
+        isAnagram myObj = new isAnagram(str1, str2);  //anagram object
 
-        if (myObj.ComputeisAnagram(str1, str2))
+        if (myObj.ComputeisAnagram(str1, str2)) //print results
             System.out.print("\"" + str1 + "\" and \"" + str2 + "\" are anagrams.");
         else
             System.out.print("\"" + str1 + "\" and \"" + str2 + "\" are not anagrams.");

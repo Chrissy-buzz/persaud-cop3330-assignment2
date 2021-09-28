@@ -21,8 +21,8 @@ class randomcl
     public static String randomcl()
     {
         String[] possibleWords = {"yes", "no", "maybe later"};
-        Random random = new Random();
-        int randomIdx = random.nextInt(possibleWords.length);
-        return possibleWords[randomIdx];
+        Random random = new Random(); //random initialized
+        int randomint = random.nextInt(possibleWords.length); //pick random index
+        return possibleWords[randomint]; //return random word
     }
 }

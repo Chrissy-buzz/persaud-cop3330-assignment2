@@ -10,6 +10,7 @@ import java.lang.*;
 
 
 public class PaymentCalculator {
+    //attributes
     double b;
     double a;
     double m;
@@ -21,6 +22,7 @@ public class PaymentCalculator {
         this.m=m;
     }
 
+    //calculations for months until paid off
     public double calculateMonthsUntilPaidOff(double b, double a, double m) {
         double months;
         a /= 36500;
